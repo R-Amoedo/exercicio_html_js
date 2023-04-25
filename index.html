@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <h2>Insira os valores</h2>
+        <br/>
+        <h3>Utiliza-se 0 antes de valores que vão de 1-9</h3>
+        <form id="form-valores">
+            <input type="number" id="valor-entrada" required placeholder="Valor de Entrada" />
+            <input type="number" id="valor-saida" required placeholder="Valor de Saída" />
+            <button id="btm-adicionar" type="submit">Adicionar</button>
+            <p class="error-message">O valor de saída não pode ser menor que o de entrada.</p>
+        </form>
+        <p class="success-message">Valores adicionados com sucesso.</p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
